@@ -5,6 +5,8 @@ import Layout from './Components/Layout';
 import "bootstrap-icons/font/bootstrap-icons.css";
 import Login from './pages/login';
 import Register from './pages/Register';
+import About from './pages/About';
+import ContactUs from './pages/ContactUs';
 
 function App(){
   return(
@@ -13,6 +15,8 @@ function App(){
           <Route path="/" element={<  LandingPage />}/>
           <Route path="/login" element={<  Login />}/>
           <Route path="/register" element={<  Register />}/>
+          <Route path="/about" element={< About />}/>
+          <Route path="/contact-us" element={< ContactUs />}/>
       </Route>
       
     </Routes>

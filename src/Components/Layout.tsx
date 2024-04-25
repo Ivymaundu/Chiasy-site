@@ -18,9 +18,9 @@ export default function Layout() {
                                 <Nav.Link href="#">Products</Nav.Link>
                                 <Nav.Link href="#">Discount Sale</Nav.Link>
                                 <Nav.Link href="#">Awareness journey</Nav.Link>
-                                <Nav.Link href="#">About us</Nav.Link>
+                                <Nav.Link href="/about">About us</Nav.Link>
                                 <Nav.Link href="#">SkinCare products</Nav.Link>
-                                <Nav.Link href="#">Contact-Us</Nav.Link>
+                                <Nav.Link href="/contact-us">Contact Us</Nav.Link>
                                 
                             </Nav>
                             <Nav className="ml-auto">

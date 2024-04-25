@@ -1,0 +1,99 @@
+.container-fluid {
+  width: 100%;
+  height: 100%;
+}
+
+.sect1 {
+  background-image: url('/images/contactus2.jpg');
+  height: 80vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the image */
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  color: black;
+  opacity: 0;
+ 
+}
+
+.sumbit-feedback {
+  --b: 3px;   
+  --s: .45em; 
+  --color: #18191a;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.sumbit-feedback:hover,
+.sumbit-feedback:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.sumbit-feedback:active {
+  background: var(--color);
+  color: #fff;
+}
+
+
+.card {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.card h2 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}

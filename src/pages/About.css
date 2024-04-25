@@ -1,0 +1,12 @@
+.image-container {
+    float: left;
+    margin-right: 20px;
+    width: 100%;
+  }
+.image-container img {
+    width: 90%;
+    height: 50vh;
+    object-fit: cover;
+
+  }
+  
