@@ -15,11 +15,11 @@ export default function Layout() {
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="me-auto">
                                 <Nav.Link href="/">Home</Nav.Link>
-                                <Nav.Link href="#">Products</Nav.Link>
+                                <Nav.Link href="/products">Products</Nav.Link>
                                 <Nav.Link href="#">Discount Sale</Nav.Link>
                                 <Nav.Link href="#">Awareness journey</Nav.Link>
                                 <Nav.Link href="/about">About us</Nav.Link>
-                                <Nav.Link href="#">SkinCare products</Nav.Link>
+                                <Nav.Link href="/products">SkinCare products</Nav.Link>
                                 <Nav.Link href="/contact-us">Contact Us</Nav.Link>
                                 
                             </Nav>
