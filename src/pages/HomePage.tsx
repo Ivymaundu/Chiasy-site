@@ -1,14 +1,14 @@
-import { Carousel,Card } from 'react-bootstrap';
+import { Carousel} from 'react-bootstrap';
 import CategoryCardList from './CategoryList';
 import './Home.css'
-import { useState } from 'react';
+import FAQ from './FAQS';
 
 
 interface Review {
     id: number;
     author: string;
     comment: string;
-    image: string; 
+    image: string;
 }
 
 export default function LandingPage() {
@@ -93,34 +93,43 @@ export default function LandingPage() {
                 <h1 className="row justify-content-center text-center pt-4" style={{ color: 'rgb(22, 117, 113)' }}> Product Categories</h1>
                 <CategoryCardList categories={Categories} />
             </section>
-            
+
 
             <section>
                 <h2 className='row justify-content-center text-center pt-5' >Customer Reviews</h2>
-            <Carousel indicators={false} prevLabel="" nextLabel="">
-            {pages.map((page, index) => (
-                <Carousel.Item key={index}>
-                    <div className="row">
-                        {page.map((review, i) => (
-                            <div key={i} className="col-md-4 pt-4">
-                                <div className="card">
-                                    <img src={review.image} className="card-img-top" alt={`Image for ${review.author}`}style={{ height: '400px' ,objectFit:'cover'}}  />
-                                    <div className="card-body">
-                                        <h5 className="card-title">{review.author}</h5>
-                                        <p className="card-text">{review.comment}</p>
+                <Carousel indicators={false} prevLabel="" nextLabel="">
+                    {pages.map((page, index) => (
+                        <Carousel.Item key={index}>
+                            <div className="row">
+                                {page.map((review, i) => (
+                                    <div key={i} className="col-md-4 pt-4">
+                                        <div className="card">
+                                            <img src={review.image} className="card-img-top" alt={`Image for ${review.author}`} style={{ height: '400px', objectFit: 'cover' }} />
+                                            <div className="card-body">
+                                                <h5 className="card-title">{review.author}</h5>
+                                                <p className="card-text">{review.comment}</p>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
+                                ))}
                             </div>
-                        ))}
-                    </div>
-                </Carousel.Item>
-            ))}
-        </Carousel>
+                        </Carousel.Item>
+                    ))}
+                </Carousel>
             </section>
 
             <section className='row justify-content-center text-center pt-5'>
                 <p>Not sure where to start?<br></br>
                     <a href="#" style={{ textDecoration: 'none' }}>Talk to one of our proffesionals for guidance</a></p>
+            </section>
+            <section className="py-5">
+                <div className="container">
+                    <div className="row justify-content-center">
+                        <div className="col-lg-8">
+                            <FAQ />
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <footer className='pt-4'>
@@ -170,12 +179,12 @@ export default function LandingPage() {
                                 <button type="submit">SUBSCRIBE</button>
                             </form>
                             <div className="icons">
-                            <i className="bi bi-facebook"></i>
-                            <i className="bi bi-whatsapp"></i>
-                            <i className="bi bi-twitter-x"></i>
-                            <i className="bi bi-linkedin"></i>
-                            <i className="bi bi-instagram"></i>
-                            <i className="bi bi-github"></i>
+                                <i className="bi bi-facebook"></i>
+                                <i className="bi bi-whatsapp"></i>
+                                <i className="bi bi-twitter-x"></i>
+                                <i className="bi bi-linkedin"></i>
+                                <i className="bi bi-instagram"></i>
+                                <i className="bi bi-github"></i>
                             </div>
                         </div>
                     </div>

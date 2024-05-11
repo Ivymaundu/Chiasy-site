@@ -2,6 +2,7 @@ import './About.css';
 
 
 export default function About() {
+    
     return (
         <div className="container-fluid pt-4">
             <section className="row">
@@ -15,8 +16,8 @@ export default function About() {
                         reprehenderit.
                     </p>
                 </div>
-                </section>
-                <section className="row pt-5">
+            </section>
+            <section className="row pt-5">
                 <div className="col-md-6">
                     <div className="image-container">
                         <img
@@ -26,9 +27,9 @@ export default function About() {
                         />
                     </div>
                 </div>
-          
-        
-            <div className="col-md-6">
+
+
+                <div className="col-md-6">
                     <h1>WHAT WE DO</h1>
                     <p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis
@@ -40,8 +41,86 @@ export default function About() {
                 </div>
             </section>
             <section className='pt-5'>
+
+                
+            </section>
+            <section style={{ textAlign: 'center' }}>
+                <h1 className='pt-5'>Our Company's CEOs </h1>
+          
+
+      <div className="row pt-5" >
+        <div className="col-lg-4 col-md-6 mb-4">
+          <section style={{ textAlign: 'center' }}>
+            
+            <p style={{ textAlign: 'left', maxWidth: '300px', margin: '0 auto' }}>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius totam obcaecati doloremque quia officiis? Ullam magnam rerum magni alias obcaecati omnis, aut eveniet laboriosam explicabo quod distinctio! Eos laboriosam vel mollitia recusandae.
+            </p>
+          </section>
+        </div>
+        <div className="col-lg-4 col-md-6 mb-4">
+          <section style={{ textAlign: 'center' }}>
+            
+            <p style={{ textAlign: 'left', maxWidth: '300px', margin: '0 auto' }}>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius totam obcaecati doloremque quia officiis? Ullam magnam rerum magni alias obcaecati omnis, aut eveniet laboriosam explicabo quod distinctio! Eos laboriosam vel mollitia recusandae.
+            </p>
+          </section>
+        </div>
+        <div className="col-lg-4 col-md-6 mb-4">
+          <section style={{ textAlign: 'center' }}>
+           
+            <p style={{ textAlign: 'left', maxWidth: '300px', margin: '0 auto' }}>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius totam obcaecati doloremque quia officiis? Ullam magnam rerum magni alias obcaecati omnis, aut eveniet laboriosam explicabo quod distinctio! Eos laboriosam vel mollitia recusandae.
+            </p>
+          </section>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-lg-4 col-md-6 mb-4">
+          <section className='pt-5'>
+            <img src="/images/theOwner.jpg" alt="Image of the CEO" style={{ height: '50vh', width: '100%', objectFit: 'contain' }} />
+          </section>
+        </div>
+        <div className="col-lg-4 col-md-6 mb-4">
+          <section className='pt-5'>
+            <img src="/images/owner3.jpg" alt="Image of the CEO" style={{ height: '50vh', width: '100%', objectFit: 'contain' }} />
+          </section>
+        </div>
+        <div className="col-lg-4 col-md-6 mb-4">
+          <section className='pt-5'>
+            <img src="/images/theOwner.jpg" alt="Image of the CEO" style={{ height: '50vh', width: '100%', objectFit: 'contain' }} />
+          </section>
+        </div>
+      </div>
+   
+      </section>
+      <section className="row pt-5">
                
-            <div className="container">
+                <div className="col-md-6" style={{marginTop:'100px',textAlign:'center'}}>
+                    <h1>Partnerships</h1>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis
+                        amet ad ducimus atque similique corrupti vitae maxime assumenda,
+                        vero quia, deserunt totam aspernatur dolor veniam blanditiis sunt
+                        harum suscipit necessitatibus incidunt rerum obcaecati reiciendis
+                        quis et. Quibusdam atque quasi eos!
+                    </p>
+                </div>
+                <div className="col-md-6">
+                    <div className="image-container">
+                        <img
+                            src="/images/patnership.jpg"
+                            alt="We take care of your health for you"
+                            className="img-fluid"
+                        />
+                    </div>
+                </div>
+
+
+            </section>
+
+            <section className='pt-5'>
+               
+            <div className="container-fluid">
       <h2>Our Branches</h2>
       <ul className="list-unstyled">
         <li><a href="#" style={{textDecoration: 'none'}}>Nairobi</a></li>
@@ -52,6 +131,7 @@ export default function About() {
     </div>
                
             </section>
+
 
             <footer className='pt-4'>
                 <section className='footer' >
@@ -100,12 +180,12 @@ export default function About() {
                                 <button type="submit">SUBSCRIBE</button>
                             </form>
                             <div className="icons">
-                            <i className="bi bi-facebook"></i>
-                            <i className="bi bi-whatsapp"></i>
-                            <i className="bi bi-twitter-x"></i>
-                            <i className="bi bi-linkedin"></i>
-                            <i className="bi bi-instagram"></i>
-                            <i className="bi bi-github"></i>
+                                <i className="bi bi-facebook"></i>
+                                <i className="bi bi-whatsapp"></i>
+                                <i className="bi bi-twitter-x"></i>
+                                <i className="bi bi-linkedin"></i>
+                                <i className="bi bi-instagram"></i>
+                                <i className="bi bi-github"></i>
                             </div>
                         </div>
                     </div>

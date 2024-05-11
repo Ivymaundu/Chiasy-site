@@ -23,8 +23,8 @@ export default function Login() {
     const handleSubmit = async (e: any) => {
         e.preventDefault();
         let formContent: Authtype = {
-            user_name: user_name,
-            pass_word: pass_word
+            user_name: form.user_name,
+            pass_word: form.pass_word
         };
         try {
 
@@ -33,6 +33,7 @@ export default function Login() {
                 { ...formContent }, {
                 headers: {
                     'Content-Type': 'application/json',
+                    'authorization': `bearer`
                 },
             });
 
@@ -57,7 +58,7 @@ export default function Login() {
         <div className="my-content" >
         <div className="wrapper">
 
-            <form>
+            <form onSubmit={handleSubmit}>
                 <h1>Login</h1>
                 <div className="input-box">
                     <input 

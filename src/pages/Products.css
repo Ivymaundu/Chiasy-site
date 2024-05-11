@@ -1,6 +1,23 @@
-.ImageGrid {
+.product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 10px;
-   }
-   
+    grid-template-columns: repeat(3, 1fr); /* Three columns for each row */
+    gap: 20px; /* Adjust the gap between items */
+  }
+  
+  .product-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden; /* Ensure images don't overflow the card */
+  }
+  
+  .product-image {
+    width: 100%; /* Ensure the image covers the entire card width */
+    height: 150px; /* Set a fixed height for the card */
+    object-fit: cover; /* Cover the card while maintaining aspect ratio */
+  }
+  
+  .product-details {
+    padding: 10px;
+    text-align: center;
+  }
+  
