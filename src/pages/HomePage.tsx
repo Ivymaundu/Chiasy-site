@@ -55,7 +55,7 @@ export default function LandingPage() {
                             className="d-block w-100"
                             src="/images/carousel3.jpg"
                             alt="Third slide"
-                            style={{ height: 'auto', maxHeight: '400px', objectFit: 'cover' }}
+                            style={{ height: 'auto', maxHeight: '600px', objectFit: 'cover' }}
                         />
                     </Carousel.Item>
                     <Carousel.Item>
@@ -63,7 +63,7 @@ export default function LandingPage() {
                             className="d-block w-100"
                             src="/images/carousel1.jpg"
                             alt="First slide"
-                            style={{ height: '400px', maxHeight: '400px', objectFit: 'cover' }}
+                            style={{ height: '400px', maxHeight: '600px', objectFit: 'cover' }}
                         />
 
                     </Carousel.Item>
@@ -72,7 +72,7 @@ export default function LandingPage() {
                             className="d-block w-100"
                             src="/images/carousel2.jpg"
                             alt="Second slide"
-                            style={{ height: 'auto', maxHeight: '400px', objectFit: 'cover' }}
+                            style={{ height: 'auto', maxHeight: '600px', objectFit: 'cover' }}
                         />
                     </Carousel.Item>
 

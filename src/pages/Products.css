@@ -1,23 +1,36 @@
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three columns for each row */
-    gap: 20px; /* Adjust the gap between items */
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.card-img-top{
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+.container4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1rem; 
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .container4 {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   }
-  
-  .product-card {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    overflow: hidden; /* Ensure images don't overflow the card */
+}
+
+/* Media query for medium screens */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container4 {
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   }
-  
-  .product-image {
-    width: 100%; /* Ensure the image covers the entire card width */
-    height: 150px; /* Set a fixed height for the card */
-    object-fit: cover; /* Cover the card while maintaining aspect ratio */
+}
+
+/* Media query for large screens */
+@media (min-width: 1025px) {
+  .container4 {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   }
-  
-  .product-details {
-    padding: 10px;
-    text-align: center;
-  }
-  
+}

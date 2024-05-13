@@ -4,16 +4,16 @@ import {  useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 interface Authtype {
-    user_name: string,
-    pass_word: string
+    username: string,
+    password: string
 }
 
 export default function Login() {
 
     const navigate = useNavigate()
     const [form,setForm]=useState<Authtype>({
-        user_name:'',
-        pass_word:''
+        username:'',
+        password:''
     })
     type ResponseData = {
         access_token: string,
@@ -23,18 +23,17 @@ export default function Login() {
     const handleSubmit = async (e: any) => {
         e.preventDefault();
         let formContent: Authtype = {
-            user_name: form.user_name,
-            pass_word: form.pass_word
+            username: form.username,
+            password: form.password
         };
         try {
 
             const apiUrl = 'http://127.0.0.1:8000/login';
-            const response = await axios.post(apiUrl,
+            const response = await axios.post<ResponseData>(apiUrl,
                 { ...formContent }, {
                 headers: {
                     'Content-Type': 'application/json',
-                    'authorization': `bearer`
-                },
+                }
             });
 
             console.log('response', response.data)
@@ -48,7 +47,7 @@ export default function Login() {
             localStorage.setItem("token", responseData.access_token)
             let mytoken =localStorage.getItem("token")
             console.log(mytoken)
-            navigate("/dashboard")
+            navigate("/products")
         } catch (error) {
             console.log('error.......', error)
         }
@@ -65,8 +64,8 @@ export default function Login() {
                     type="text" 
                     placeholder="Username" 
                     required 
-                    value={form.user_name}
-                    onChange={(e) => setForm({ ...form, user_name: e.target.value })}
+                    value={form.username}
+                    onChange={(e) => setForm({ ...form, username: e.target.value })}
 
                     />
                     <i className='bx bxs-user'></i>
@@ -75,9 +74,9 @@ export default function Login() {
                     <input 
                     type="password" 
                     placeholder="Password"
-                    value={form.pass_word} 
+                    value={form.password} 
                     required 
-                    onChange={(e) => setForm({ ...form, pass_word: e.target.value })}
+                    onChange={(e) => setForm({ ...form, password: e.target.value })}
 />
                     <i className='bx bxs-lock-alt' ></i>
                 </div>
